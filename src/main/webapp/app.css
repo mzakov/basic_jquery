@@ -1,5 +1,49 @@
-.test {
-  background-color: black;
+#container {
+    display: -webkit-flex;
+    display: flex;
+    width: 98vw;
+    height: 87vh;
+
+}
+.fields {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100;
+	font-size: 40px;
+}
+
+#footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 98vw;
+    height: 10vh;
+	font-size: 40px;
+}
+.buttons {
+	-webkit-flex: 1;
+    flex: 1;
+    height: 100;
+    width: 24%;
+	font-size: 40px;
+	border-radius: 25px;
+	opacity: 0.8;
+}
+
+#reset {
+	-webkit-flex: 1;
+    flex: 1;
+    height: 100;
+    width: 24%;
+	font-size: 40px;
+	border-radius: 25px;
+	opacity: 0.8;
 }
 
 /*# sourceMappingURL=app.css.map*/

@@ -55,7 +55,45 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	(0, _jquery2.default)(document).ready(function () {
-	  (0, _jquery2.default)('h1').css('color', 'red');
+				var order = ['red', 'white', 'blue'];
+				var fields = ['#field1', '#field2', '#field3'];
+				var buttons = ['#button1', '#button2', '#button3'];
+				var color = [0, 1, 2];
+	
+				function init() {
+							(0, _jquery2.default)('#field1').css('background-color', order[0]);
+							(0, _jquery2.default)('#button1').css('background-color', order[1]);
+							(0, _jquery2.default)('#field2').css('background-color', order[1]);
+							(0, _jquery2.default)('#button2').css('background-color', order[2]);
+							(0, _jquery2.default)('#field3').css('background-color', order[2]);
+							(0, _jquery2.default)('#button3').css('background-color', order[0]);
+							color = [0, 1, 2];
+				}
+				;
+	
+				function changeColors(index) {
+							color[index]++;
+							(0, _jquery2.default)(fields[index]).css('background-color', order[color[index] % order.length]);
+							(0, _jquery2.default)(buttons[index]).css('background-color', order[(color[index] + 1) % order.length]);
+				}
+	
+				init();
+	
+				(0, _jquery2.default)('#button1').click(function () {
+							changeColors(0);
+				});
+	
+				(0, _jquery2.default)('#button2').click(function () {
+							changeColors(1);
+				});
+	
+				(0, _jquery2.default)('#button3').click(function () {
+							changeColors(2);
+				});
+	
+				(0, _jquery2.default)('#reset').click(function () {
+							init();
+				});
 	});
 
 /***/ },
