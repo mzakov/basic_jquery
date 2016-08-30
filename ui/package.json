@@ -1,0 +1,22 @@
+{
+  "name": "cooksys_js_fits",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --colors --progress"
+  },
+  "dependencies": {
+    "jquery": "^2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.24.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  }
+}
